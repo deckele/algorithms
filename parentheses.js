@@ -4,9 +4,9 @@
 * For the input of 2: ["()()", "(())"]. 
 * For the input of 3: [ '((()))', '(()())', '(())()', '()(())', '()()()' ].
 */
-const OPEN = "(";
-const CLOSE = ")";
 function calcParentheses(pairs, {opened, closed, str} = {opened: 0, closed: 0, str: ""}) {
+    const OPEN = "(";
+    const CLOSE = ")";
     if (opened + closed === pairs * 2) {
         return str ? [str] : [];
     }
