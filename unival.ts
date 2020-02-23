@@ -39,6 +39,7 @@ function countUnivalSubTrees(root?: TreeNode): UnivalResult {
 *
 *   expected count: 5
 */   
+
 (function test() {
     const root: TreeNode = new TreeNode(3);
     root.left = new TreeNode(2);
