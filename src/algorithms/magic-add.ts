@@ -3,6 +3,7 @@
 *
 */
 
+// Precalculated table for every two digit combination.
 // Time complexity is O(n), where n is the length of the longer number of the two input numbers. 
 // Space complexity is O(1);
 function magicAdd(num1: number = 0, num2: number = 0): number {
@@ -35,7 +36,7 @@ function magicAdd(num1: number = 0, num2: number = 0): number {
     const strArr2 = decimalSplit2.join(DECIMAL).split(EMPTY_STRING).reverse();
     let sumArr = [];
     let carryOver = false;
-    for (let i = 0; i < Math.max(strArr1.length, strArr2.length); i++) {
+    for (let i = 0; i <= Math.max(strArr1.length, strArr2.length); i++) {
         const current1 = strArr1[i] || ZERO;
         if (current1 === DECIMAL) {
             sumArr.push(current1);
