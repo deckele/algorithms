@@ -48,5 +48,8 @@ function countUnivalSubTrees(root?: TreeNode): UnivalResult {
     root.right = new TreeNode(3);
     root.right.right = new TreeNode(3);
     root.right.left = new TreeNode(3);
-    console.log("Expected Number of unival subtrees: 5. Result is:", countUnivalSubTrees(root).count);
+    console.log(
+        "Expected Number of unival subtrees: 5. Result is:", 
+        countUnivalSubTrees(root).count
+    );
 })();
